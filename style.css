@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-style: "Lato", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(image/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 0.3vw;
+}
+
+h2 {
+  margin-top: 5vh;
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.current {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25vh;
+  font-weight: 100;
+  font-size: 2rem;
+  width: 9vw;
+}
+
+.containers {
+  margin: 2vh 2vw 2vh 2vw;
+  height: 95vh;
+  border-radius: 25px;
+  box-shadow: 0.3em 0.3em 0.8em -0.125em rgba(10, 10, 10, 0.4),
+    -0.3em -0.3em 0.8em -0.125em rgba(10, 10, 10, 0.4);
+  opacity: 90%;
+}
+
+#control {
+  text-align: center;
+}
+
+.roll {
+  margin-top: 10vh;
+}
+
+.hold {
+  margin-top: 5vh;
+}
+
+.dice {
+  font-size: 4vw;
+}
+
+.propertiesBox {
+  padding: 150px;
+}
+
+.box {
+  width: 23vw;
+}
+
+.player1 {
+  text-align: center;
+  margin: 0 50px 0 0;
+}
+
+.control {
+  margin: 0 50px 0 50px;
+}
+
+.player2 {
+  text-align: center;
+  margin: 0 0 0 50px;
+}
