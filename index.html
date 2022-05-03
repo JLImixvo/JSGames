@@ -19,13 +19,15 @@
         <div class="propertiesBox col">
           <div class="row">
             <div class="player1 box col-4">
-              <div id="player1">
-                <h1>PLAYER 1</h1>
+              <div class="player1">
+                <h1 id="player1" class="activePlayer">PLAYER 1</h1>
 
-                <h2 class="text-danger">43</h2>
+                <h2 id="scoreTotal1" class="text-danger">0</h2>
                 <div class="current bg-danger">
                   <h3>CURRENT</h3>
-                  <strong class="currentScore text-light">11</strong>
+                  <strong id="currentScore1" class="currentScore text-light"
+                    >0</strong
+                  >
                 </div>
               </div>
             </div>
@@ -39,17 +41,28 @@
 
                 <!-- Display dice -->
                 <div id="dice" class="dice">
-                  <i class="fa-regular fa-dice-one"></i>
+                  <i class="fa-regular fa-dice-two"></i>
                 </div>
 
                 <!-- Roll or re-roll the dice -->
-                <button type="button" class="btn btn-outline-danger roll">
+                <button
+                  type="button"
+                  id="roll"
+                  class="btn btn-outline-danger roll"
+                >
                   <i class="fa-solid fa-arrows-rotate"></i> ROLL DICE
                 </button>
+                <div id="waitMessage">
+                  <p></p>
+                </div>
                 <br />
 
                 <!-- Get the amount -->
-                <button type="button" class="btn btn-outline-danger hold">
+                <button
+                  type="button"
+                  id="hold"
+                  class="btn btn-outline-danger hold"
+                >
                   <i class="fa-solid fa-arrow-down-to-square"></i> HOLD
                 </button>
                 <br />
@@ -57,12 +70,14 @@
             </div>
             <div class="player2 box col-4">
               <div class="player2">
-                <h1>PLAYER 2</h1>
+                <h1 id="player2" class="">PLAYER 2</h1>
 
-                <h2 class="text-danger">43</h2>
+                <h2 id="scoreTotal2" class="text-danger">0</h2>
                 <div class="current bg-danger">
                   <h3>CURRENT</h3>
-                  <strong class="currentScore text-light">0</strong>
+                  <strong id="currentScore2" class="currentScore text-light"
+                    >0</strong
+                  >
                 </div>
               </div>
             </div>
@@ -72,5 +87,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
     <script src="js/all.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
