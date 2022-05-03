@@ -89,3 +89,15 @@ h2 {
   content: "•";
   color: red;
 }
+
+.dark {
+  cursor: pointer;
+  user-select: none;
+  font-size: 3rem;
+}
+
+.white {
+  cursor: pointer;
+  user-select: none;
+  font-size: 3rem;
+}

@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="containers bg-light">
+    <div id="containers" class="containers bg-light">
       <div class="row justify-content-center">
         <div class="propertiesBox col">
           <div class="row">
             <div class="player1 box col-4">
               <div class="player1">
-                <h1 id="player1" class="activePlayer">PLAYER 1</h1>
+                <h1 id="player1" class="activePlayer text-dark">PLAYER 1</h1>
 
                 <h2 id="scoreTotal1" class="text-danger">0</h2>
                 <div class="current bg-danger">
@@ -33,14 +33,23 @@
             </div>
             <div class="control box col-4">
               <div id="control">
+                <div class="color">
+                  <div id="colorMode" class="dark">
+                    <i id="sun" class="fa-regular fa-sun-bright text-dark"></i>
+                  </div>
+                </div>
                 <!-- Create new game -->
-                <button type="button" class="m-5 btn btn-outline-danger">
+                <button
+                  id="newGames"
+                  type="button"
+                  class="m-5 btn btn-outline-danger"
+                >
                   <i class="fa-solid fa-circle-plus"></i> NEW GAMES
                 </button>
                 <br />
 
                 <!-- Display dice -->
-                <div id="dice" class="dice">
+                <div id="dice" class="dice text-dark">
                   <i class="fa-regular fa-dice-two"></i>
                 </div>
 
@@ -70,7 +79,7 @@
             </div>
             <div class="player2 box col-4">
               <div class="player2">
-                <h1 id="player2" class="">PLAYER 2</h1>
+                <h1 id="player2" class="text-dark">PLAYER 2</h1>
 
                 <h2 id="scoreTotal2" class="text-danger">0</h2>
                 <div class="current bg-danger">

@@ -57,3 +57,40 @@ function wait(ms) {
     end = new Date().getTime();
   }
 }
+
+function mode(theme) {
+  if (theme == "white") {
+    colorMode.classList.remove("white")
+    colorMode.classList.add("dark")
+
+
+    document.getElementById("containers").classList.add("bg-light")
+    document.getElementById("containers").classList.remove("bg-dark")
+    document.getElementById("sun").classList.add("text-dark")
+    document.getElementById("sun").classList.remove("text-light")
+    p1.classList.remove("text-light")
+    p2.classList.remove("text-light")
+    p1.classList.add("text-dark")
+    p2.classList.add("text-dark")
+    dice.classList.add("text-dark")
+    dice.classList.remove("text-light")
+
+    localStorage.setItem("theme", theme)
+  } else {
+    colorMode.classList.add("white")
+    colorMode.classList.remove("dark")
+
+    document.getElementById("containers").classList.remove("bg-light")
+    document.getElementById("containers").classList.add("bg-dark")
+    document.getElementById("sun").classList.add("text-light")
+    document.getElementById("sun").classList.remove("text-dark")
+    p1.classList.add("text-light")
+    p2.classList.add("text-light")
+    p1.classList.remove("text-dark")
+    p2.classList.remove("text-dark")
+    dice.classList.remove("text-dark")
+    dice.classList.add("text-light")
+
+    localStorage.setItem("theme", theme)
+  }
+}

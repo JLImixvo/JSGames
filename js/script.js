@@ -10,6 +10,8 @@ var dice = document.getElementById("dice");
 var roll = document.getElementById("roll");
 var hold = document.getElementById("hold");
 
+var newGames = document.getElementById("newGames")
+
 let currentPlayer = 1
 
 roll.addEventListener("click", function () {
@@ -69,3 +71,35 @@ hold.addEventListener("click", function () {
     p1.classList.add("activePlayer")
   }
 });
+
+newGames.addEventListener("click", function () {
+  p2.classList.remove("activePlayer")
+  p1.classList.add("activePlayer")
+  currentPlayer = 1
+
+  currentScore1.innerHTML = 0
+  total1.innerHTML = 0
+  currentScore2.innerHTML = 0
+  total2.innerHTML = 0
+})
+
+var colorMode = document.getElementById("colorMode")
+let color
+
+let theme = localStorage.getItem("theme");
+
+if (theme != null) {
+  color = theme
+  mode(theme)
+}
+
+colorMode.addEventListener("click", function () {
+  console.log(color)
+  if (color == "black") {
+    mode("white")
+    color = "white"
+  } else {
+    mode("black")
+    color = "black"
+  }
+})
